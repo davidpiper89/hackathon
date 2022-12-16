@@ -15,6 +15,11 @@ const Home = () => {
             </Link>
           </div>
           <div className="linkContainer">
+            <Link to="/blending" className="links">
+              Blending
+            </Link>
+          </div>
+          <div className="linkContainer">
             <Link to="/Help" className="links">
               Help
             </Link>
