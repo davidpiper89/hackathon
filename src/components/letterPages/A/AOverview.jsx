@@ -1,9 +1,10 @@
 import React from "react";
 import Letter from "./Letter";
 import Audio from "./Audio";
-import LetterImage from "./LetterImage";
+
 import GuessingImages from "./GuessingImages";
 import Next from "./Next";
+import "../Letters.css";
 
 const Overview = () => {
   return (
@@ -11,15 +12,13 @@ const Overview = () => {
       <div className="header">
         <Letter />
 
-        {/* <Audio />
+        <Audio />
       </div>
       <div className="body">
-        <LetterImage />
-
         <GuessingImages />
       </div>
       <div className="footer">
-        <Next /> */}
+        <Next />
       </div>
     </div>
   );
