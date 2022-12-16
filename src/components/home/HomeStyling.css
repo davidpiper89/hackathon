@@ -1,9 +1,29 @@
+body,
+html {
+  height: 100%;
+}
+.background {
+  background-image: url("../../../public/images/background/reef.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
 .homepage-header-container {
   text-align: center;
 }
-
+.homepage-header {
+  background-color: #51fb94;
+  font-size: 2rem;
+  width: 30rem;
+  margin: auto;
+  border-radius: 1rem;
+  font-size: 3rem;
+  padding: 4rem;
+}
 .homepage-content-container {
   display: flex;
+  padding: 1rem;
+  justify-content: space-evenly;
 }
 
 .links {
@@ -11,22 +31,17 @@
 }
 
 .linkContainer {
-  background-color: green;
+  background-color: #51fb94;
   width: 6rem;
   height: 3rem;
-  margin: auto;
   font-size: 2rem;
   text-align: center;
   border-radius: 1rem;
+  padding: 1.5rem;
 }
 
-.homepage-header {
-  background-color: red;
-  font-size: 2rem;
-  width: 30rem;
-  margin: auto;
-  margin-top: 8rem;
-  margin-bottom: 15rem;
-  border-radius: 1rem;
-  font-size: 3rem;
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
 }
