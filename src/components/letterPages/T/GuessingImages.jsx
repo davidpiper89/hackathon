@@ -2,8 +2,8 @@ import React from "react";
 import image1 from "./fish.png";
 import image2 from "./cake.png";
 import image3 from "./tennis.png";
-import IncorrectModal from "./IncorrectModal";
-import CorrectModal from "./CorrectModal";
+import IncorrectModal from "../../../modalFolder/IncorrectModal";
+import CorrectModal from "../../../modalFolder/CorrectModal";
 import { useState } from "react";
 
 const GuessingImages = () => {
@@ -14,7 +14,7 @@ const GuessingImages = () => {
 
   return (
     <>
-      <div className="openWrong">
+      <div className="openWrong"> 
         <img
           src={image1}
           alt="no work"

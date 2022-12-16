@@ -2,8 +2,8 @@ import React from "react";
 import apple1 from "./donut.png";
 import apple2 from "./Apple.png";
 import apple3 from "./lemon.png";
-import IncorrectModal from "./IncorrectModal";
-import CorrectModal from "./CorrectModal";
+import IncorrectModal from "../../../modalFolder/IncorrectModal";
+import CorrectModal from "../../../modalFolder/CorrectModal";
 import { useState } from "react";
 
 const GuessingImages = () => {

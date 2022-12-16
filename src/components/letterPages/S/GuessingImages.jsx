@@ -2,8 +2,8 @@ import React from "react";
 import snake1 from "./croc.png";
 import snake2 from "./pig.png";
 import snake3 from "./snake.png";
-import IncorrectModal from "./IncorrectModal";
-import CorrectModal from "./CorrectModal";
+import IncorrectModal from "../../../modalFolder/IncorrectModal";
+import CorrectModal from "../../../modalFolder/CorrectModal";
 import { useState } from "react";
 
 const GuessingImages = () => {

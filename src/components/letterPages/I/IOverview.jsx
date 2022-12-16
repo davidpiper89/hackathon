@@ -7,7 +7,7 @@ import "../Letters.css";
 
 const Overview = () => {
   return (
-    <div>
+    <div className="game-container">
       <div className="header">
         <Letter />
 
