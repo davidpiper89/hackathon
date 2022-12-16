@@ -1,6 +1,6 @@
 import React from "react";
-const Audio = () => {
+const Video = () => {
   return <div></div>;
 };
 
-export default Audio;
+export default Video;
