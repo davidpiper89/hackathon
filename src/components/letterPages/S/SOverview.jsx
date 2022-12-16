@@ -19,8 +19,8 @@ const Overview = () => {
           <GuessingImages />
         </div>
         <div className="footer">
-          {" "}
-          <Next />{" "}
+          
+          <Next />
         </div>
       </div>
     </>
