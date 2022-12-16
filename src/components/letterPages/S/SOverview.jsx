@@ -11,7 +11,6 @@ const Overview = () => {
       <div className="game-container">
         <div className="header">
           <Letter />
-
           <Video />
         </div>
         <div className="body">

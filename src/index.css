@@ -33,3 +33,7 @@ code {
 .navLink:hover {
   color: red;
 }
+
+.hidden {
+  display: none;
+}
