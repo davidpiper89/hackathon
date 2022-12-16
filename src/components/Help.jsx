@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useState } from "react";
 
@@ -38,6 +37,18 @@ const Help = () => {
           this in a way that you were not taught in school. Here, you will find
           lots of information about phonics and how you can use these games to
           teach children to read.
+        </p>
+        <h2> About the App</h2>
+        <p>
+          This app provides game based learning to encourage your children to
+          learn to be enthusiastic on their journey of learning to read. This
+          app is made to be accessible to children on a computer, phone or
+          tablet. It is intuitive enough that children should be able to
+          navigate it independently after one or two, but it is great for
+          parents to play alongside their children to prompt, encourae and
+          celebrate the child's success with them. For information on how you
+          can support your child as they use this app, please see the "How Can I
+          Help" section.
         </p>
         <button className="whatIsPhonicsBtn" onClick={handleClickPh}>
           What is Phonics?
@@ -127,4 +138,3 @@ const Help = () => {
   );
 };
 export default Help;
-
