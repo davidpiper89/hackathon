@@ -3,12 +3,16 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
 import Help from "./components/Help";
-import SOverview from "./components/letterPages/S/SOverview"
+import SOverview from "./components/letterPages/S/SOverview";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <header>
+          <Header />
+        </header>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/help" element={<Help />} />
@@ -22,6 +26,5 @@ function App() {
       </BrowserRouter>
     </>
   );
-
 }
 export default App;

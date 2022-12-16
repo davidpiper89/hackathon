@@ -9,13 +9,14 @@ html {
   height: 100vh;
 }
 .homepage-header-container {
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 .homepage-header {
   background-color: #51fb94;
   font-size: 2rem;
   width: 30rem;
-  margin: auto;
   border-radius: 1rem;
   font-size: 3rem;
   padding: 4rem;
