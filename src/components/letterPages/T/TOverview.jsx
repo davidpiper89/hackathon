@@ -1,7 +1,7 @@
 import React from "react";
 import Letter from "./Letter";
 import Video from "./Video";
-import Audio from "./Audio"
+import Audio from "./Audio";
 import GuessingImages from "./GuessingImages";
 import Next from "./Next";
 import "../Letters.css";
@@ -18,14 +18,12 @@ const Overview = () => {
         <div className="body">
           <GuessingImages />
         </div>
-        <div className="footer">
-          
-          <Next />
-        </div>
+      </div>
+      <div className="footer">
+        <Next />
       </div>
     </>
   );
 };
-
 
 export default Overview;

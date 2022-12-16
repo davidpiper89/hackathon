@@ -4,7 +4,7 @@ import Video from "./Video";
 import GuessingImages from "./GuessingImages";
 import Next from "./Next";
 import "../Letters.css";
-import Audio from "./Audio"
+import Audio from "./Audio";
 
 const Overview = () => {
   return (
@@ -18,10 +18,9 @@ const Overview = () => {
         <div className="body">
           <GuessingImages />
         </div>
-        <div className="footer">
-          
-          <Next />
-        </div>
+      </div>
+      <div className="footer">
+        <Next />
       </div>
     </>
   );

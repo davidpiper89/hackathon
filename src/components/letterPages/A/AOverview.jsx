@@ -18,9 +18,9 @@ const Overview = () => {
         <div className="body">
           <GuessingImages />
         </div>
-        <div className="footer">
-          <Next />
-        </div>
+      </div>
+      <div className="footer">
+        <Next />
       </div>
     </>
   );
