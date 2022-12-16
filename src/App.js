@@ -3,7 +3,8 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
 import Help from "./components/Help";
-import SOverview from "./components/letterPages/S/SOverview"
+import SOverview from "./components/letterPages/S/SOverview";
+import BlendingGame from "./components/BlendingGame";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/help" element={<Help />} />
           <Route path="/s" element={<SOverview />} />
+          <Route path="/blending" element={<BlendingGame />} />
           {/* <Route path="/A" element={<A />} />
           <Route path="/T" element={<T />} />
           <Route path="/P" element={<P />} />
@@ -22,6 +24,5 @@ function App() {
       </BrowserRouter>
     </>
   );
-
 }
 export default App;
