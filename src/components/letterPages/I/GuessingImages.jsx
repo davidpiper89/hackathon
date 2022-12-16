@@ -1,7 +1,7 @@
 import React from "react";
-import apple1 from "./donut.png";
-import apple2 from "./Apple.png";
-import apple3 from "./lemon.png";
+import image1 from "./shoe.png";
+import image2 from "./igloo.png";
+import image3 from "./key.png";
 import IncorrectModal from "./IncorrectModal";
 import CorrectModal from "./CorrectModal";
 import { useState } from "react";
@@ -16,7 +16,7 @@ const GuessingImages = () => {
     <>
       <div className="openWrong">
         <img
-          src={apple1}
+          src={image1}
           alt="no work"
           width="100px"
           onClick={() => setOpenWrongModal(true)}
@@ -25,7 +25,7 @@ const GuessingImages = () => {
 
       <div className="openWrong">
         <img
-          src={apple2}
+          src={image2}
           alt="no work"
           width="100px"
           onClick={() => setOpenRightModal(true)}
@@ -33,7 +33,7 @@ const GuessingImages = () => {
       </div>
       <div className="openRight">
         <img
-          src={apple3}
+          src={image3}
           alt="no work"
           width="100px"
           onClick={() => setOpenWrongModal(true)}

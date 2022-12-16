@@ -7,7 +7,7 @@ import "../Letters.css";
 
 const Overview = () => {
   return (
-    <div className="container">
+    <div>
       <div className="header">
         <Letter />
 
@@ -16,7 +16,7 @@ const Overview = () => {
       <div className="body">
         <GuessingImages />
       </div>
-      <div>
+      <div className="footer">
         <Next />
       </div>
     </div>
