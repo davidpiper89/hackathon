@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./HelpStyling.css";
 
 const Help = () => {
   const [isShownPhonics, setIsShownPhonics] = useState(false);
@@ -64,19 +65,25 @@ const Help = () => {
             </p>
             <p>
               The soudns made by these letters are called <span>phonemes.</span>
-              These are the first phonemes your child will learn.<span>s</span>
+              These are the first phonemes your child will learn.
+              <span>s</span>
+              <br></br>
               <span>a</span>
+              <br></br>
               <span>t</span>
+              <br></br>
               <span>p</span>
             </p>
             <p>
-              {" "}
-              When your child begins Phase 3, they will start to learn about{" "}
+              When your child begins Phase 3, they will start to learn about
               <span>digraphs,</span>these are two letters that create one sound.
             </p>
             <span>ai</span>
+            <br></br>
             <span>ee</span>
+            <br></br>
             <span>oa</span>
+            <br></br>
             <span>ur</span>
             <button className="closePhonics" onClick={handleClosePh}>
               Close
@@ -92,17 +99,15 @@ const Help = () => {
             <h3>Initial Sounds</h3>
             <p>
               Your child will start by learning to say the correct phoneme when
-              they see s, a t, p, i and n. They will then develop their
+              they see s, a, t, p, i and n. They will then develop their
               listening skills to be able to identify these phonemes as initial
               sounds in words.
             </p>
-            <p>
-              <span> s</span> for <span>sun.</span>
-            </p>
-            <p>
-              <span>a</span>for <span>apple. </span>
-            </p>
-            <button onClick={handleCloseIs}>Close</button>
+            <p>s for sun.</p>
+            <p>a fro apple.</p>
+            <button className="closeIS" onClick={handleCloseIs}>
+              Close
+            </button>
           </>
         )}
         <button className="canIHelpBtn" onClick={handleClickHelp}>

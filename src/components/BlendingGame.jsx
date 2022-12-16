@@ -1,104 +1,107 @@
 import React from "react";
 import { useState, useContext } from "react";
-
+import sit from "./sit.png";
+import pat from "./pat.png";
+import tap from "./tap.png";
+import pan from "./pan.png";
+import sip from "./sip.png";
+import pip from "./pip.png";
 import scoreContext from "./Score";
 
 const BlendingGame = () => {
   //words with options of pictures for children to match with
-  const matches = () => {
-    return [
-      {
-        id: 0,
-        word: "sit",
-        answers: [
-          {
-            optionImg: "sit",
-            isCorrect: true,
-          },
-          {
-            optionImg: "pat",
-            isCorrect: false,
-          },
-          {
-            optionImg: "tap",
-            isCorrect: false,
-          },
-        ],
-      },
-      {
-        id: 1,
-        word: "tap",
-        answers: [
-          {
-            optionImg: "pat",
-            isCorrect: false,
-          },
-          {
-            optionImg: "tap",
-            isCorrect: true,
-          },
-          {
-            optionInmg: "sip",
-            isCorrect: false,
-          },
-        ],
-      },
-      {
-        id: 2,
-        word: "sip",
-        answers: [
-          {
-            optionImg: "pan",
-            isCorrect: false,
-          },
-          {
-            optionImg: "sip",
-            isCorrect: true,
-          },
-          {
-            optionImg: "pip",
-            isCorrect: false,
-          },
-        ],
-      },
-      {
-        id: 3,
-        word: "pip",
-        answers: [
-          {
-            optionImg: "pan",
-            isCorrect: false,
-          },
-          {
-            optionImg: "sit",
-            isCorrect: false,
-          },
-          {
-            optionImg: "pip",
-            isCorrect: true,
-          },
-        ],
-      },
-      {
-        id: 4,
-        word: "pan",
-        answers: [
-          {
-            optionImg: "pan",
-            isCorrect: true,
-          },
-          {
-            optionImg: "tap",
-            isCorrect: false,
-          },
-          {
-            optionImg: "pat",
-            isCorrect: false,
-          },
-        ],
-      },
-    ].sort(() => Math.random());
-  };
+  const matches = [
+    {
+      id: 0,
+      word: "sit",
+      answers: [
+        {
+          optionImg: <img src={sit} alt="sit"></img>,
+          isCorrect: true,
+        },
+        {
+          optionImg: <img src={pat} alt="pat"></img>,
+          isCorrect: false,
+        },
+        {
+          optionImg: <img src={tap} alt="tap"></img>,
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      id: 1,
+      word: "tap",
+      answers: [
+        {
+          optionImg: <img src={pat} alt="pat"></img>,
+          isCorrect: false,
+        },
+        {
+          optionImg: <img src={tap} alt="tap"></img>,
+          isCorrect: true,
+        },
+        {
+          optionImg: <img src={sip} alt="sip"></img>,
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      id: 2,
+      word: "sip",
+      answers: [
+        {
+          optionImg: <img src={pan} alt="pan"></img>,
+          isCorrect: false,
+        },
+        {
+          optionImg: <img src={sip} alt="sip"></img>,
+          isCorrect: true,
+        },
+        {
+          optionImg: <img src={pip} alt="pip"></img>,
+          isCorrect: false,
+        },
+      ],
+    },
+    {
+      id: 3,
+      word: "pip",
+      answers: [
+        {
+          optionImg: <img src={pan} alt="pan"></img>,
+          isCorrect: false,
+        },
+        {
+          optionImg: <img src={sit} alt="sit"></img>,
+          isCorrect: false,
+        },
+        {
+          optionImg: <img src={pip} alt="pip"></img>,
+          isCorrect: true,
+        },
+      ],
+    },
+    {
+      id: 4,
+      word: "pan",
+      answers: [
+        {
+          optionImg: <img src={pan} alt="pan"></img>,
+          isCorrect: true,
+        },
+        {
+          optionImg: <img src={tap} alt="tap"></img>,
+          isCorrect: false,
+        },
+        {
+          optionImg: <img src={pat} alt="pat"></img>,
+          isCorrect: false,
+        },
+      ],
+    },
+  ].sort(() => Math.random());
 
   const [questions, setQuestions] = useState(matches);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -170,7 +173,7 @@ const BlendingGame = () => {
                 >
                   <img
                     className="optionImg"
-                    src={`../../public/images/options/${answers.optionImg}.png`}
+                    src={`${answers}`}
                     alt="pictures"
                   />
                 </div>
@@ -188,5 +191,4 @@ const BlendingGame = () => {
     </div>
   );
 };
-
 export default BlendingGame;
