@@ -4,6 +4,7 @@ import Video from "./Video";
 import GuessingImages from "./GuessingImages";
 import Next from "./Next";
 import "../Letters.css";
+import Audio from "./Audio"
 
 const Overview = () => {
   return (
@@ -11,7 +12,7 @@ const Overview = () => {
       <div className="game-container">
         <div className="header">
           <Letter />
-
+          <Audio />
           <Video />
         </div>
         <div className="body">
