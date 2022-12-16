@@ -8,20 +8,24 @@ import "../Letters.css";
 
 const Overview = () => {
   return (
-    <div>
-      <div className="header">
-        <Letter />
-        <Audio />
-        <Video />
+    <>
+      <div className="game-container">
+        <div className="header">
+          <Letter />
+          <Audio />
+          <Video />
+        </div>
+        <div className="body">
+          <GuessingImages />
+        </div>
+        <div className="footer">
+          
+          <Next />
+        </div>
       </div>
-      <div className="body">
-        <GuessingImages />
-      </div>
-      <div className="footer">
-        <Next />
-      </div>
-    </div>
+    </>
   );
 };
+
 
 export default Overview;
