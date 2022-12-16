@@ -7,19 +7,21 @@ import "../Letters.css";
 
 const Overview = () => {
   return (
-    <div className="container">
-      <div className="header">
-        <Letter />
+    <>
+      <div className="game-container">
+        <div className="header">
+          <Letter />
 
-        <Audio />
+          <Audio />
+        </div>
+        <div className="body">
+          <GuessingImages />
+        </div>
+        <div className="footer"> <Next />  </div>
       </div>
-      <div className="body">
-        <GuessingImages />
-      </div>
-      <div>
-        <Next />
-      </div>
-    </div>
+
+    </>
+
   );
 };
 
