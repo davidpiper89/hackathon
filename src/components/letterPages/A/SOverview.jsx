@@ -11,7 +11,7 @@ const Overview = () => {
       <div className="header">
         <Letter />
 
-       <Audio />
+        {/* <Audio />
       </div>
       <div className="body">
         <LetterImage />
@@ -19,7 +19,7 @@ const Overview = () => {
         <GuessingImages />
       </div>
       <div className="footer">
-        {/* <Next />  */}
+        <Next /> */}
       </div>
     </div>
   );
