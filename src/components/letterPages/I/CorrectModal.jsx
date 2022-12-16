@@ -1,13 +1,16 @@
 import React from "react";
+import Next from "../I/Next";
 
 const CorrectModal = ({ setOpenRightModal }) => {
   return (
     <div className="modalBackground">
-      <div className="modalContainer">
+      <div className="modal">
         <div className="body">
           <h1>Correct</h1>
         </div>
-        <button onClick={() => setOpenRightModal(false)}> X </button>
+        <button onClick={() => setOpenRightModal(false)}>
+          <Next />
+        </button>
       </div>
     </div>
   );

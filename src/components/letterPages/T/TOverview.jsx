@@ -8,19 +8,18 @@ import "../Letters.css";
 
 const Overview = () => {
   return (
-    <div>
-      <div className="header">
-        <Letter />
+    <>
+      <div className="game-container">
+        <div className="header">
+          <Letter />
 
-        <Audio />
+          <Audio />
+        </div>
+        <div className="body">
+          <GuessingImages />
+        </div>
       </div>
-      <div className="body">
-        <GuessingImages />
-      </div>
-      <div className="footer">
-        <Next />
-      </div>
-    </div>
+    </>
   );
 };
 

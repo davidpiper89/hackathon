@@ -1,7 +1,7 @@
 import React from "react";
 
 const Letter = () => {
-  return <div>T</div>;
+  return <div className="overview-letter">T</div>;
 };
 
 export default Letter;

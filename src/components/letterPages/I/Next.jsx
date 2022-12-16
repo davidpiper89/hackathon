@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Next = () => {
   return (
     <div>
-      <Link to={"/i"}>NEXT</Link>
+      <Link to={"/a"}>NEXT</Link>
     </div>
   );
 };
