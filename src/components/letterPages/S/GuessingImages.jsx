@@ -1,7 +1,7 @@
 import React from "react";
-import snake1 from "./snake-pic.png";
-import snake2 from "./snake-pic.png";
-import snake3 from "./snake-pic.png";
+import snake1 from "./croc.png";
+import snake2 from "./pig.png";
+import snake3 from "./snake.png";
 import IncorrectModal from "./IncorrectModal";
 import CorrectModal from "./CorrectModal";
 import { useState } from "react";
@@ -10,7 +10,7 @@ const GuessingImages = () => {
   const [openWrongModal, setOpenWrongModal] = useState(false);
   const [openRightModal, setOpenRightModal] = useState(false);
 
-  const wrong = () => {};
+  // const wrong = () => {};
 
   return (
     <>
