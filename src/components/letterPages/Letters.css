@@ -3,10 +3,72 @@
 }
 
 .header {
-  width: 50%;
-  
+  margin: auto;
+  text-align: center;
+  margin-top: 10rem;
 }
 
 .body {
   width: 50%;
+}
+
+.overview-letter {
+  font-size: 5rem;
+  width: 10rem;
+  margin: auto;
+
+  color: white;
+}
+
+.guessing-images-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 90vw;
+  margin-top: 3rem;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 90vw;
+  margin-top: 3rem;
+}
+
+.openWrong,
+.openRight {
+  border: solid;
+  border-width: 0.3rem;
+  border-radius: 1rem;
+  border-color: white;
+  width: 8rem;
+}
+
+.guessing-images {
+  margin-left: 0.9rem;
+}
+
+.modal-box,
+.modal {
+  border: solid;
+  border-radius: 1rem;
+  border-width: 0.3rem;
+  border-color: white;
+}
+
+.modal-button {
+  margin-left: 2.6rem;
+}
+
+.incorrect-modal-button {
+  margin-left: 3.5rem;
+}
+
+.game-container {
+  background-color: rgb(120, 35, 120);
+  width: 90vw;
+  margin: auto;
+  border-radius: 1rem;
+  height: 70vh;
 }
