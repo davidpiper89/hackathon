@@ -9,7 +9,9 @@ const Home = () => {
       </div>
       <div className="homepage-content-container">
         <div className="linkContainer">
-          <Link className="links">Start</Link>
+          <Link to={"/s"} className="links">
+            Start
+          </Link>
         </div>
         <div className="linkContainer">
           <Link to="/Help" className="links">
